@@ -76,7 +76,7 @@ public class OtherFrame extends JFrame implements TopicInterface, ActionListener
 			public void actionPerformed(ActionEvent e) {
 				if (SelectedOpc == 1) {
 				label = new JLabel();
-				label.setText("texto");
+				label.setText(listTopic.get(0);
 				label.setBackground(Color.white);
 				label.setBounds(150,150,50,50);
 				label.setVisible(true);
