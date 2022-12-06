@@ -36,8 +36,8 @@ public class Banco implements Database {
 		return null;
 	}
 
-	public static ArrayList<Topic> getListTopic() {
-		return listTopic;
+	public static ArrayList<Topic> getListTopic(int index) {
+		return listTopic(index);
 	}
 
 	public static void setListTopic(ArrayList<Topic> listTopic) {
