@@ -5,6 +5,11 @@ public class Topic {
 	private String modelo;
 	private int ano;
 
+	@Override
+	public String toString(){
+            return "Topic [placa=" + placa + ", modelo=" + modelo + ", ano=" + ano + "]";
+	}
+	
 	public Topic(String placa, String modelo, int ano) {
 		this.placa = placa;
 		this.modelo = modelo;
