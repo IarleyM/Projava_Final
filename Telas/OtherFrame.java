@@ -69,17 +69,19 @@ public class OtherFrame extends JFrame implements TopicInterface, ActionListener
 
 		button = new JButton("Visualizar");
 		button.setBounds(180, 350, 100, 30);
-
+		
+		label.setForegrounds(Color.white);
+		label.setBackground(Color.white);
+	        label.setBounds(20, 125, 300, 30);
+		c.add(label);
+		b.addTopic(null);
+		
 		button.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (SelectedOpc == 1) {
-				label = new JLabel();
-				label.setText(b.getListTopic(0);
-				label.setBackground(Color.white);
-				label.setBounds(150,150,50,50);
-				label.setVisible(true);
+				    label.setText(b.getListTopic(0));
 				}
 
 			}
